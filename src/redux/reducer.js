@@ -4,7 +4,7 @@ const initState = {
         status: 'All',
         priority: [],
     },
-    todList: [
+    todoList: [
         {id: 11, name: 'Lean yoga', completed: false, priority: 'Medium'},
         {id: 12, name: 'Lean java', completed: true, priority: 'High'},
         {id: 13, name: 'Lean cook', completed: false, priority: 'Low'}
@@ -20,7 +20,6 @@ const rootReducer = (state = initState, action) => {
     console.log({state, action})
     switch (action.type) {
         case 'todoList/addTodo':
-
             return {
                 ...state,
                 todoList: [
